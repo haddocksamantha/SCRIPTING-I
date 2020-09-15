@@ -4,7 +4,36 @@ using UnityEngine;
 
 public class MoverScript : MonoBehaviour
 {
-    public float speed = 3f;
+    public float moveSpeed;
+    private Vector3 moveDirection;
+
+    public void Update()
+    {
+        if (Input.GetButton("Jump"))
+        {
+            moveDirection.x = moveSpeed * Time.deltaTime;
+            transform.Translate(moveDirection);
+        }
+        else
+        {
+            moveDirection.x = -moveSpeed * Time.deltaTime;
+            transform.Translate(moveDirection);
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+/*
+ * public float speed = 3f;
     public int score = 100;
     
     // Start is called before the first frame update
@@ -31,4 +60,5 @@ public class MoverScript : MonoBehaviour
     {
         transform.Translate(0, -speed, 0);
     }
-}
+ * 
+ */
