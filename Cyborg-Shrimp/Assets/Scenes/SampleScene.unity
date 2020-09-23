@@ -5578,9 +5578,8 @@ GameObject:
   - component: {fileID: 1948710706}
   - component: {fileID: 1948710705}
   - component: {fileID: 1948710704}
-  - component: {fileID: 1948710703}
-  - component: {fileID: 1948710708}
   - component: {fileID: 1948710709}
+  - component: {fileID: 1948710703}
   m_Layer: 0
   m_Name: Player 1
   m_TagString: Untagged
@@ -5597,10 +5596,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1948710702}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8163db652fa94437098b8fe1587e5dd4, type: 3}
+  m_Script: {fileID: 11500000, guid: a15a9a3cf03eb48978278712a043e9f0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0
+  controller: {fileID: 0}
+  moveSpeed: 3
+  gravity: -9.81
+  jumpForce: 30
 --- !u!65 &1948710704
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -5677,23 +5679,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1948710708
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1948710702}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 07edb2f680eff4f22935144a29c793de, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 100
-  password: password
-  playerName: link
-  points: 0
-  keyCode: 
 --- !u!143 &1948710709
 CharacterController:
   m_ObjectHideFlags: 0
