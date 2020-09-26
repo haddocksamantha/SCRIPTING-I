@@ -2836,6 +2836,10 @@ GameObject:
   - component: {fileID: 5350068979400003051}
   - component: {fileID: 5350068979390818603}
   - component: {fileID: 1416911712009823177}
+  - component: {fileID: 1541241868}
+  - component: {fileID: 7277985046315523201}
+  - component: {fileID: 4588921397516447889}
+  - component: {fileID: 1009683010775029712}
   m_Layer: 0
   m_Name: Dog_SaintBernard_01
   m_TagString: Untagged
@@ -2926,6 +2930,59 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 15
+--- !u!114 &1541241868
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350068979400290331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7266362056e1b46088e25d2b7e166ec8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!65 &7277985046315523201
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350068979400290331}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.08, y: -0.43, z: 0.35}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &4588921397516447889
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350068979400290331}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!114 &1009683010775029712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5350068979400290331}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73897d2de97574ebbbca7cb0769c8063, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5350068979400293491
 GameObject:
   m_ObjectHideFlags: 0
