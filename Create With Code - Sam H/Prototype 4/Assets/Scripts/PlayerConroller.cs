@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class PlayerConroller : MonoBehaviour
@@ -13,7 +14,7 @@ public class PlayerConroller : MonoBehaviour
     void Start()
     {
         playerRb = GetComponent<Rigidbody>();
-        focalPoint = gameObject.Find("FocalPoint");
+        focalPoint = GameObject.Find("Focal Point");
     }
 
     // Update is called once per frame
