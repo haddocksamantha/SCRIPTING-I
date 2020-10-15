@@ -27,7 +27,7 @@ public class Target : MonoBehaviour
         targetRb = GetComponent<Rigidbody>();
         //call random methods
         targetRb.AddForce(RandomForce(), ForceMode.Impulse);
-        targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque()), ForceMode.Impulse);
+        targetRb.AddTorque(RandomTorque(), RandomTorque(), RandomTorque(), ForceMode.Impulse);
         transform.position = RandomSpawnPos();
 
     }
@@ -55,5 +55,14 @@ public class Target : MonoBehaviour
         //randomize positions
         return new Vector3(Random.Range(-xRange, xRange),ySpawnPos);
     }
-    
+
+    private void onMouseDown()
+    {
+        Destroy(gameObject);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+       Destroy(gameObject);
+    }
 }
