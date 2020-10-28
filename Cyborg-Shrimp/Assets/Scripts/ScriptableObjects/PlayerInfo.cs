@@ -4,11 +4,11 @@ using UnityEngine;
 [CreateAssetMenu]
 public class PlayerInfo : ScriptableObject
 {
-    public string name;
-    public string gender;
-    public string nationality;
-    public int age;
-    public float height;
+    public string characterRace;
+    public string characterGender;
+    public string characterNationality;
+    public int characterAge;
+    public float characterHeight;
     
     // Start is called before the first frame update
     void Start()
