@@ -5,22 +5,44 @@ using UnityEngine;
 public class PlayerMover : MonoBehaviour
 {
     public float speed = 5.0f;
+    public float horizontalInput;
+    public float verticalInput;
 
-    private Rigidbody playerRigidbody;
-    private Vector3 moveDirection;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        playerRigidbody = GetComponent<Rigidbody>();
-    }
-
+    public float yRange = 15f;
+    public float xRange = 15f;
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
+        horizontalInput = Input.GetAxis("Horizontal");
+        verticalInput = Input.GetAxis("Vertical");
+        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+        transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
+        
+        OutOfBounds();
+    }
+
+    void OutOfBounds()
+    {
+        //y axis boundaries
+        if (transform.position.y < -yRange)
         {
-            transform.Translate(moveDirection * speed * Time.deltaTime);
+            transform.position = new Vector3(transform.position.x,-yRange,transform.position.z);
         }
+
+        if (transform.position.y > yRange)
+        {
+            transform.position = new Vector3(transform.position.x,yRange,transform.position.z);
+        }
+        //x axis boundaries
+        if (transform.position.x < -xRange)
+        {
+            transform.position = new Vector3(-xRange,transform.position.y,transform.position.z);
+        }
+
+        if (transform.position.x > xRange)
+        {
+            transform.position = new Vector3(xRange,transform.position.y,transform.position.z);
+        }
+        
     }
 }
