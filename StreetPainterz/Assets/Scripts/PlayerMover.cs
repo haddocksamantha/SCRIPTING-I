@@ -8,7 +8,7 @@ public class PlayerMover : MonoBehaviour
     public float horizontalInput;
     public float verticalInput;
 
-    public float yRange = 15f;
+    public float zRange = 15f;
     public float xRange = 15f;
     // Update is called once per frame
     void Update()
@@ -23,16 +23,18 @@ public class PlayerMover : MonoBehaviour
 
     void OutOfBounds()
     {
-        //y axis boundaries
-        if (transform.position.y < -yRange)
+        /*
+        //z axis boundaries
+        if (transform.position.z < -zRange)
         {
-            transform.position = new Vector3(transform.position.x,-yRange,transform.position.z);
+            transform.position = new Vector3(transform.position.x,transform.position.y,-zRange);
         }
 
-        if (transform.position.y > yRange)
+        if (transform.position.z > zRange)
         {
-            transform.position = new Vector3(transform.position.x,yRange,transform.position.z);
+            transform.position = new Vector3(transform.position.x,transform.position.y,zRange);
         }
+        */
         //x axis boundaries
         if (transform.position.x < -xRange)
         {
