@@ -20,5 +20,6 @@ public class Collections : MonoBehaviour
             sprite.sprite = item.art;
             sprite.color = item.artColor;
         }
+        //ask about in class, confused
     }
 }
