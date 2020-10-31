@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,6 +11,13 @@ public class PlayerMover : MonoBehaviour
 
     public float zRange = 15f;
     public float xRange = 15f;
+
+    public int score;
+
+    void Start()
+    {
+        score = 0; 
+    }
     // Update is called once per frame
     void Update()
     {
@@ -21,20 +29,16 @@ public class PlayerMover : MonoBehaviour
         OutOfBounds();
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (GameObject.FindGameObjectWithTag("SprayCan"))
+        {
+            score++;
+        }
+    }
+
     void OutOfBounds()
     {
-        /*
-        //z axis boundaries
-        if (transform.position.z < -zRange)
-        {
-            transform.position = new Vector3(transform.position.x,transform.position.y,-zRange);
-        }
-
-        if (transform.position.z > zRange)
-        {
-            transform.position = new Vector3(transform.position.x,transform.position.y,zRange);
-        }
-        */
         //x axis boundaries
         if (transform.position.x < -xRange)
         {
@@ -48,3 +52,17 @@ public class PlayerMover : MonoBehaviour
         
     }
 }
+
+
+/*
+      //z axis boundaries
+      if (transform.position.z < -zRange)
+      {
+          transform.position = new Vector3(transform.position.x,transform.position.y,-zRange);
+      }
+
+      if (transform.position.z > zRange)
+      {
+          transform.position = new Vector3(transform.position.x,transform.position.y,zRange);
+      }
+      */
