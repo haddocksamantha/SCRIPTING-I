@@ -6,6 +6,7 @@ TagManager:
   tags:
   - SprayCan
   - Sticker
+  - Powerup
   layers:
   - Default
   - TransparentFX

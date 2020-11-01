@@ -8,9 +8,8 @@ public class PlayerMover : MonoBehaviour
     public float speed = 5.0f;
     public float horizontalInput;
     public float verticalInput;
-
-    public float zRange = 15f;
-    public float xRange = 15f;
+    
+    private float xRange = 15f;
 
     public int score;
 
@@ -34,6 +33,11 @@ public class PlayerMover : MonoBehaviour
         if (GameObject.FindGameObjectWithTag("SprayCan"))
         {
             score++;
+        }
+
+        if (GameObject.FindGameObjectWithTag("Powerup"))
+        {
+            speed = 6.5f;
         }
     }
 

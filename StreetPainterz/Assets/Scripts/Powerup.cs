@@ -1,31 +1,26 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Powerup : MonoBehaviour
 {
-    private GameObject sprayCan;
-    
-    public bool powerUpActive = false;
-    
-    // Start is called before the first frame update
+    private GameObject powerup;
+    public bool speedPoweredUp = false;
+
     void Start()
     {
-        sprayCan = GameObject.FindWithTag("SprayCan");
-        
-    } 
+        powerup = GameObject.FindWithTag("Powerup");
+
+    }
+
     void Update()
     {
-        
+
     }
+
     private void OnTriggerEnter(Collider other)
     {
-      Destroy(sprayCan);
-      powerUpActive = true;
+        Destroy(powerup);
+        speedPoweredUp = true;
     }
-    
-    //add code to add sticker to wall
-    //add powerup timer
-    //add bool for powerup
 }
