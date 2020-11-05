@@ -7,6 +7,7 @@ TagManager:
   - SprayCan
   - Sticker
   - Powerup
+  - HealthBar
   layers:
   - Default
   - TransparentFX
