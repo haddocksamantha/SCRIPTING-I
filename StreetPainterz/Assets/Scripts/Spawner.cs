@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 public class Spawner : MonoBehaviour
 {
+   /*
    public GameObject[] objectsToSpawn;
    public float xRange = 6f;
    public int numberOfObjects; 
@@ -24,7 +25,6 @@ public class Spawner : MonoBehaviour
       if (numberOfObjects < 2)
       {
          SpawnRandom();
-         RandomTransform();
       }
    }
 
@@ -42,6 +42,6 @@ public class Spawner : MonoBehaviour
       float z = 3.4f;
       spawnPos = new Vector3(x,y,z);
       transform.position = spawnPos;
-   }
+   }*/
 
 }

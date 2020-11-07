@@ -23,4 +23,6 @@ public class Powerup : MonoBehaviour
         Destroy(powerup);
         speedPoweredUp = true;
     }
+
+
 }

@@ -6,38 +6,42 @@ using UnityEngine;
 public class PlayerMover : MonoBehaviour
 {
     public float speed = 5.0f;
-    public float horizontalInput;
-    public float verticalInput;
     
+    private static int score;
+    private float horizontalInput;
+    private float verticalInput;
     private float xRange = 15f;
-
-    public int score;
 
     void Start()
     {
-        score = 0; 
+      
     }
     // Update is called once per frame
     void Update()
+    {
+        Movement();
+        OutOfBounds();
+        score = ScoreScript.score;
+    }
+
+    void Movement()
     {
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
         transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
         transform.Translate(Vector3.forward * verticalInput * Time.deltaTime * speed);
-        
-        OutOfBounds();
     }
 
     private void OnTriggerEnter(Collider other)
     {
         if (GameObject.FindGameObjectWithTag("SprayCan"))
         {
-            score++;
+            score += 10; 
         }
 
         if (GameObject.FindGameObjectWithTag("Powerup"))
         {
-            speed = 6.5f;
+            speed = 10f;
         }
     }
 
@@ -56,17 +60,3 @@ public class PlayerMover : MonoBehaviour
         
     }
 }
-
-
-/*
-      //z axis boundaries
-      if (transform.position.z < -zRange)
-      {
-          transform.position = new Vector3(transform.position.x,transform.position.y,-zRange);
-      }
-
-      if (transform.position.z > zRange)
-      {
-          transform.position = new Vector3(transform.position.x,transform.position.y,zRange);
-      }
-      */
