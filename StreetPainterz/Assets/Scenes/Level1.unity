@@ -583,12 +583,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 487168647}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2cce14386b9f48aba7355a565aecc4f, type: 3}
+  m_Script: {fileID: 11500000, guid: 8247d7f5c099145b2bd461a368b0d23e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  healthBar: {fileID: 0}
-  playerHealth: 100
-  player: {fileID: 0}
+  healthSlider: {fileID: 329272304}
+  health: 0
 --- !u!4 &487168649
 Transform:
   m_ObjectHideFlags: 0
