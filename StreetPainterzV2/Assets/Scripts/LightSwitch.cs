@@ -32,4 +32,6 @@ public class LightSwitch : MonoBehaviour
             spotLight.SetActive(false);
         }
     }
+
+    
 }

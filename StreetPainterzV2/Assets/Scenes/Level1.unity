@@ -148,6 +148,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 220209732}
+  - component: {fileID: 220209733}
   m_Layer: 0
   m_Name: GameController
   m_TagString: Untagged
@@ -169,6 +170,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &220209733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220209731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a761c6bb19304954ae9b3748083de09, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprayCanPrefab: {fileID: 5029894478819981294, guid: d906167b2d017464590f0c897991dcad, type: 3}
+  playerPrefab: {fileID: 7043742375461235170, guid: 5aac7d23cb40f4ba8a499286690b4c5e, type: 3}
+  powerUpPrefab: {fileID: 4676462047191857692, guid: e79e786670cfe4a76b652ea9761ecd33, type: 3}
+  playerSpawnPoint: {x: 0, y: 0, z: 0}
 --- !u!1 &282520106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1802,11 +1819,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4676462047191857664, guid: e79e786670cfe4a76b652ea9761ecd33, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.831
+      value: -7.2
       objectReference: {fileID: 0}
     - target: {fileID: 4676462047191857664, guid: e79e786670cfe4a76b652ea9761ecd33, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.627
+      value: -3.62
       objectReference: {fileID: 0}
     - target: {fileID: 4676462047191857664, guid: e79e786670cfe4a76b652ea9761ecd33, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1887,7 +1904,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 806194976025138011, guid: 5252a4179435d4a589b63b7359f112ac, type: 3}
       propertyPath: m_RootOrder
-      value: 9
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 806194976025138011, guid: 5252a4179435d4a589b63b7359f112ac, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1968,64 +1985,3 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5aac7d23cb40f4ba8a499286690b4c5e, type: 3}
---- !u!1001 &8651786586622564630
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.87
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -3.47
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -7.8698115
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0.009789925
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9999521
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2202404428212661085, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3520590492238225698, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: sticker
-      value: 
-      objectReference: {fileID: 1537205955519355652, guid: bd94e8b38bd9542ab8b457bbac95286b, type: 3}
-    - target: {fileID: 5029894478819981294, guid: d906167b2d017464590f0c897991dcad, type: 3}
-      propertyPath: m_Name
-      value: SprayCan
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: d906167b2d017464590f0c897991dcad, type: 3}
