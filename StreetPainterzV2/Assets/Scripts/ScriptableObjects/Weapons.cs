@@ -5,49 +5,89 @@ using System.Runtime.InteropServices;
 using System.Threading.Tasks;
 using UnityEngine;
 
-[CreateAssetMenu]
-public class Weapons : ScriptableObject
+public class Weapons : MonoBehaviour
 {
-  public int weapon = 5;
+  public int weapon = 0;
 
   private string noWeapon;
 
   void Start()
   {
     noWeapon = "No Weapon Selected";
+    WeaponAssignments();
+  }
+
+  void Update()
+  {
+    if (Input.GetKeyDown("W"))
+    {
+      weapon++;
+      WeaponsSwitch();
+    }
   }
   
   void WeaponsSwitch()
   {
     switch (weapon)
     {
+      case 10:
+        weapon = 0;
+        break;
+      case 9:
+        Instantiate(bowlingBallPrefab);
+        break;
+      case 8:
+        Instantiate(wandPrefab);
+        break;
+      case 7:
+        Instantiate(bombPrefab);
+        break;
+      case 6:
+        Instantiate(featherPrefab);
+        break;
       case 5:
-        GameObject.FindWithTag("Sword");
+        Instantiate(katanaPrefab);
         break;
       case 4:
-        GameObject.FindWithTag("Gun");
+        Instantiate(knifePrefab);
         break;
       case 3:
-        GameObject.FindWithTag("Knife");
+        Instantiate(gunPrefab);
         break;
       case 2:
-        GameObject.FindWithTag("Katana");
+        Instantiate(swordPrefab);
         break;
       case 1:
-        GameObject.FindWithTag("Bomb");
+        Instantiate(nunchakuPrefab);
         break;
       default:
         Debug.Log(noWeapon);
         break;
     }
   }
- 
-  
-  
-  
-  
-  
-  
+
+  public GameObject bombPrefab;
+  public GameObject katanaPrefab;
+  public GameObject knifePrefab;
+  public GameObject gunPrefab;
+  public GameObject swordPrefab;
+  public GameObject featherPrefab;
+  public GameObject nunchakuPrefab;
+  public GameObject wandPrefab;
+  public GameObject bowlingBallPrefab;
+
+  void WeaponAssignments()
+  {
+    bombPrefab = GetComponent<GameObject>();
+    katanaPrefab = GetComponent<GameObject>();
+    knifePrefab = GetComponent<GameObject>();
+    gunPrefab = GetComponent<GameObject>();
+    swordPrefab = GetComponent<GameObject>();
+    featherPrefab = GetComponent<GameObject>();
+    nunchakuPrefab = GetComponent<GameObject>();
+    wandPrefab = GetComponent<GameObject>();
+    bowlingBallPrefab = GetComponent<GameObject>();
+  }
   
 }
 
