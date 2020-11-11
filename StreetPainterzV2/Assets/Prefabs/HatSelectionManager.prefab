@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9025179984772904798
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7676042362845864768}
+  - component: {fileID: 896769419583574430}
+  m_Layer: 0
+  m_Name: HatSelectionManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7676042362845864768
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9025179984772904798}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 408.0351, y: 255.6398, z: -606.7377}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &896769419583574430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9025179984772904798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e6f3e3acaa84304b184085a154a37d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  topHatPrefab: {fileID: 1206284510961951191, guid: 2955dd6f8c5f04eff93099394a5ec831, type: 3}
+  chefHatPrefab: {fileID: 7335040333718348161, guid: 7edacaa05bb77473e8f776098bcebe5b, type: 3}
+  graduationHatPrefab: {fileID: 1273454308344203651, guid: 562910ff3487c4d42962d9da2b5cd512, type: 3}
+  cowboyHatPrefab: {fileID: 3739599171523481298, guid: a67538528ec254af3be4a039f064797a, type: 3}
+  witchHatPrefab: {fileID: 7403754483694057228, guid: 7a71d2f7455c946fe917c7921713532f, type: 3}
+  hatMenuCanvas: {fileID: 338305296824023195, guid: 87eb0f3f55f6a411980135daa99141a4, type: 3}
