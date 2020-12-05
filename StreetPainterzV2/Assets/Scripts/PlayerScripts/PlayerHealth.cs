@@ -8,14 +8,13 @@ public class PlayerHealth : MonoBehaviour
    public int maxHealth = 5;
    public int currentHealth;
     
-   public HealthBar healthBar;
+   public HealthBar playerHealthBar;
     
    void Start()
    {
       currentHealth = maxHealth;
-      healthBar = GetComponent<HealthBar>();
-      healthBar.SetMaxHealth(maxHealth);
-      
+      playerHealthBar = GetComponent<HealthBar>();
+      playerHealthBar.SetMaxHealth(maxHealth);
    }
     
    private void OnCollisionEnter(Collision other)
@@ -30,7 +29,7 @@ public class PlayerHealth : MonoBehaviour
    void EnemyDamage(int damage)
    {
       currentHealth -= damage;
-      healthBar.SetHealth(currentHealth);
+      playerHealthBar.SetHealth(currentHealth);
    }
 }
 
