@@ -5,8 +5,9 @@ using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Spawner : MonoBehaviour
+/*public class Spawner : MonoBehaviour
 {
+    
     public GameObject sprayCanPrefab;
     public GameObject playerPrefab;
     public GameObject powerUpPrefab;
@@ -65,3 +66,4 @@ public class Spawner : MonoBehaviour
         itemTransform = new Vector3(itemX, itemY, itemZ);
     }
 }
+*/

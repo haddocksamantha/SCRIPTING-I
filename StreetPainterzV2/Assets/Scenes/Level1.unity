@@ -243,6 +243,12 @@ MonoBehaviour:
   playerPrefab: {fileID: 7043742375461235170, guid: 5aac7d23cb40f4ba8a499286690b4c5e, type: 3}
   powerUpPrefab: {fileID: 4676462047191857692, guid: e79e786670cfe4a76b652ea9761ecd33, type: 3}
   playerSpawnPoint: {x: 0, y: 0, z: 0}
+  numberOfCans: 0
+  itemTransform: {x: 0, y: 0, z: 0}
+  itemX: 0
+  itemY: -3.627
+  itemZ: -7.869812
+  xRange: 7
 --- !u!1 &237947244
 GameObject:
   m_ObjectHideFlags: 0
@@ -2171,7 +2177,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1805009939}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.4515947, y: -0.2714127, z: -9.05961}
+  m_LocalPosition: {x: -1.4515947, y: -0.2714127, z: -8.43}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 673733415}
