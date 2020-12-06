@@ -5,6 +5,7 @@ using UnityEngine;
 public class FlashingLightScript : MonoBehaviour
 {
    public Animator lightFlashing;
+   public KeyCode keyL = KeyCode.L;
 
    void Start()
    {
@@ -18,7 +19,7 @@ public class FlashingLightScript : MonoBehaviour
 
    void LightKey()
    {
-      if (Input.GetKeyDown("L"))
+      if (Input.GetKeyDown(keyL))
       {
          lightFlashing.Play("FlashingLight");
       }

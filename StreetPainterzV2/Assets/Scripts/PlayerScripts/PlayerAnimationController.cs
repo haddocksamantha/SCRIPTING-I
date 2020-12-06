@@ -6,9 +6,14 @@ using UnityEngine;
 public class PlayerAnimationController : MonoBehaviour
 {
     public Animator playerWalkAnim;
+    private float playerSpeed;
+    
 
     private void Start()
     {
+        GameObject playerPrefab = GameObject.FindWithTag("Player");
+        PlayerMover playerMovementScript = playerPrefab.GetComponent<PlayerMover>();
+        playerSpeed = playerMovementScript.speed;
         playerWalkAnim = GetComponent<Animator>();
     }
 
@@ -19,10 +24,10 @@ public class PlayerAnimationController : MonoBehaviour
 
     void PlayerWalkAnimation()
     {
-        if (Input.GetKeyDown("Horizontal"))
+        if (playerSpeed > 0)
         {
             playerWalkAnim.Play("PlayerWalkAnim");
-        }else if (Input.GetKeyUp("Horizontal"))
+        } else if (playerSpeed <= 0)
         {
             playerWalkAnim.Play("PlayerIdleAnim");
         }

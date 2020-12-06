@@ -109,6 +109,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab91a1837137b402390acfa30de2704b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sticker: {fileID: 0}
+  sticker: {fileID: 1537205955519355652, guid: bd94e8b38bd9542ab8b457bbac95286b, type: 3}
   powerUpActive: 0
   numberOfStickers: 0

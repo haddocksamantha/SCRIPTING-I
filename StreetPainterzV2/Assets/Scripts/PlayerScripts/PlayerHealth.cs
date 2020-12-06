@@ -14,7 +14,6 @@ public class PlayerHealth : MonoBehaviour
    {
       currentHealth = maxHealth;
       playerHealthBar = GetComponent<HealthBar>();
-      playerHealthBar.SetMaxHealth(maxHealth);
    }
     
    private void OnCollisionEnter(Collision other)

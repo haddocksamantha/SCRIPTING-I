@@ -406,6 +406,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   boxAnimation: {fileID: 0}
+  keyB: 98
 --- !u!95 &360650998
 Animator:
   serializedVersion: 3
@@ -884,6 +885,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lightFlashing: {fileID: 715997307}
+  keyL: 108
 --- !u!1 &739349980
 GameObject:
   m_ObjectHideFlags: 0
