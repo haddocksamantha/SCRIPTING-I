@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 14c7fae5f849f4db7810076e4a8ee613, type: 2}
 --- !u!1001 &8126161
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -239,16 +239,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a761c6bb19304954ae9b3748083de09, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprayCanPrefab: {fileID: 5029894478819981294, guid: d906167b2d017464590f0c897991dcad, type: 3}
-  playerPrefab: {fileID: 7043742375461235170, guid: 5aac7d23cb40f4ba8a499286690b4c5e, type: 3}
-  powerUpPrefab: {fileID: 4676462047191857692, guid: e79e786670cfe4a76b652ea9761ecd33, type: 3}
-  playerSpawnPoint: {x: 0, y: 0, z: 0}
-  numberOfCans: 0
-  itemTransform: {x: 0, y: 0, z: 0}
-  itemX: 0
-  itemY: -3.627
-  itemZ: -7.869812
-  xRange: 7
 --- !u!1 &237947244
 GameObject:
   m_ObjectHideFlags: 0
@@ -1538,7 +1528,7 @@ GameObject:
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!4 &1388949493
 Transform:
